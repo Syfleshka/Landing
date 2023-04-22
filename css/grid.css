@@ -1,0 +1,17 @@
+.grid-game {
+  touch-action: none;
+  overscroll-behavior: none;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 340px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+}
+.grid-game__box {
+  display: flex;
+}
+.grid-game__element {
+  width: 100%;
+}/*# sourceMappingURL=grid.css.map */

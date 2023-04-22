@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="logo">
+      <div class="logo__block">
+        <img class="logo__img" src="img/logo.png" />
+      </div>
+    </header>
+    <main class="main">
+      <div data-grid-game="game" class="grid-game">
+        <div class="grid-game__box"><canvas data-grid-game="element" class="grid-game__element"></canvas></div>
+        <div class="grid-game__box"><canvas data-grid-game="element" class="grid-game__element"></canvas></div>
+        <div class="grid-game__box"><canvas data-grid-game="element" class="grid-game__element"></canvas></div>
+        <div class="grid-game__box"><canvas data-grid-game="element" class="grid-game__element"></canvas></div>
+        <div class="grid-game__box"><canvas data-grid-game="element" class="grid-game__element"></canvas></div>
+        <div class="grid-game__box"><canvas data-grid-game="element" class="grid-game__element"></canvas></div>
+        <div class="grid-game__box"><canvas data-grid-game="element" class="grid-game__element"></canvas></div>
+        <div class="grid-game__box"><canvas data-grid-game="element" class="grid-game__element"></canvas></div>
+        <div class="grid-game__box"><canvas data-grid-game="element" class="grid-game__element"></canvas></div>
+      </div>
+      <p id="youwin" class="youwin">
+        Удачи!
+      </p>
+      <button class="btn" onclick="resetGridGame('img/img-1.jpg')">Сбросить</button>
+    </main>
+    <footer class="smoking">
+      <p class="smoking__text">Курение убивает</p>
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/interact.min.js"></script>
+  <script type="text/javascript" src="js/grid.js"></script>
+  <script type="text/javascript">
+    const img = 'img/img-1.jpg'
+    startGridGame(img);
+  </script>
+</body>
+</html>
